@@ -11,7 +11,8 @@
     <parent>
         <groupId>org.jenkins-ci.plugins</groupId>
         <artifactId>plugin</artifactId>
-        <version>3.19</version>
+        <version>4.51</version>
+        <relativePath/>
     </parent>
 
     <description>This plugin cleans all old workspace directories used by the job</description>
@@ -57,8 +58,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.level>8</java.level>
-        <jenkins.version>2.60.3</jenkins.version>
+        <jenkins.version>2.346.3</jenkins.version>
     </properties>
 
     <scm>
