@@ -5,8 +5,6 @@ import java.util.List;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
-import javax.annotation.Nonnull;
-
 import org.jvnet.localizer.Localizable;
 import org.kohsuke.accmod.Restricted;
 import org.kohsuke.accmod.restrictions.NoExternalUse;
@@ -17,6 +15,7 @@ import com.google.common.base.Joiner;
 import com.google.common.base.Splitter;
 import com.google.common.collect.Lists;
 
+import edu.umd.cs.findbugs.annotations.NonNull;
 import hudson.Extension;
 import hudson.util.FormValidation;
 import jenkins.model.GlobalConfiguration;
@@ -76,7 +75,7 @@ public class CommonConfig extends GlobalConfiguration {
         load();
     }
 
-    public @Nonnull NodeSelection getNodeSelection() {
+    public @NonNull NodeSelection getNodeSelection() {
         return nodeSelection == null ? DEFAULT_NODESELECTION : nodeSelection;
     }
 
@@ -106,7 +105,7 @@ public class CommonConfig extends GlobalConfiguration {
         save();
     }
 
-    public @Nonnull String[] getNodeNamesToSkip() {
+    public @NonNull String[] getNodeNamesToSkip() {
         return nodeNamesToSkip == null ? new String[0] : Arrays.copyOf(nodeNamesToSkip, nodeNamesToSkip.length);
     }
 

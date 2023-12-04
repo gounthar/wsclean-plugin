@@ -1,6 +1,6 @@
 package jenkins.model;
 
-import javax.annotation.CheckForNull;
+import edu.umd.cs.findbugs.annotations.CheckForNull;
 
 public class TestJenkins {
     private static Jenkins.JenkinsHolder originalHolder;
